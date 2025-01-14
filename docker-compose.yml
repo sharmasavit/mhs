@@ -31,12 +31,15 @@ services:
     image: nhsdev/nia-mhs-outbound:1.3.2
     ports:
       - "32768:80"
+    env_file:
+      - .env
+
     environment:
       - MHS_LOG_LEVEL=NOTSET
-      - MHS_SECRET_PARTY_KEY
-      - MHS_SECRET_CLIENT_CERT
-      - MHS_SECRET_CLIENT_KEY
-      - MHS_SECRET_CA_CERTS
+#      - MHS_SECRET_PARTY_KEY
+#      - MHS_SECRET_CLIENT_CERT
+#      - MHS_SECRET_CLIENT_KEY
+#      - MHS_SECRET_CA_CERTS
       - MHS_STATE_TABLE_NAME=mhs_state
       - MHS_DB_ENDPOINT_URL=http://host.docker.internal:8000
       - MHS_SYNC_ASYNC_STATE_TABLE_NAME=sync_async_state
