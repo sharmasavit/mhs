@@ -26,7 +26,7 @@ spec:
       containers:
       - env:
         - name: MHS_FORWARD_RELIABLE_ENDPOINT_URL
-          value: https://msg.int.spine2.ncrs.nhs.uk/reliablemessaging/reliablerequest
+          value: https://155.231.231.2:53/reliablemessaging/reliablerequest
         - name: MHS_LOG_LEVEL
           value: DEBUG
         # - name: MHS_OUTBOUND_HTTP_PROXY
