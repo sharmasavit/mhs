@@ -118,10 +118,10 @@ venv.bak/
 
 
 # Certs
-**/*.cert
-**/*.crt
-**/*.key
-**/*.pem
+#**/*.cert
+#**/*.crt
+#**/*.key
+#**/*.pem
 **/certs/party_key.txt
 **/certs/asid.txt
 
@@ -164,4 +164,4 @@ export-env-vars-and-run-mhs-docker.sh
 **/export-env-vars.sh
 out/
 
-*.env
+#*.env
