@@ -170,7 +170,7 @@ services:
       - MHS_SPINE_ORG_CODE=YES
       - MHS_SPINE_REQUEST_MAX_SIZE=4999600 # 5 000 000 - 400
       # Note that this endpoint URL is Opentest-specific
-      - MHS_FORWARD_RELIABLE_ENDPOINT_URL=https://msg.int.spine2.ncrs.nhs.uk/reliablemessaging/reliablerequest
+      - MHS_FORWARD_RELIABLE_ENDPOINT_URL=https://155.231.231.2:53/reliablemessaging/reliablerequest
       # This is for disabling hostname validation so OpenTest ip address will work
       - MHS_OUTBOUND_VALIDATE_CERTIFICATE=${MHS_OUTBOUND_VALIDATE_CERTIFICATE:-True}
       - SERVICE_PORTS=80
