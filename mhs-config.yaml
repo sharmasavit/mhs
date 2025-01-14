@@ -6,7 +6,7 @@ MHS_INBOUND_HEALTHCHECK_SERVER_PORT: "8082"
 # Common environment variables for outbound
 MHS_OUTBOUND_VALIDATE_CERTIFICATE: "True"
 MHS_OUTBOUND_ROUTING_LOOKUP_METHOD: "SPINE_ROUTE_LOOKUP"
-MHS_SDS_API_URL: https://155.231.231.2:53/reliablemessaging/reliablerequest
+MHS_SDS_API_URL: https://sandbox.api.service.nhs.uk/spine-directory/FHIR/R4
 MHS_SDS_API_KEY: BGH3LMDtnadxNtL6YetqurpZDnE4wjtz
 
 MHS_LOG_LEVEL: DEBUG
