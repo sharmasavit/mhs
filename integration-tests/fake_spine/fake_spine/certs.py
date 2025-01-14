@@ -14,9 +14,9 @@ class Certs(object):
 
     def __init__(self):
         """Create an empty Certs object."""
-        self.private_key_path = None
-        self.local_cert_path = None
-        self.ca_certs_path = None
+        self.private_key_path = "/home/ubuntu/mhs/client_cert.pem"
+        self.local_cert_path = "/home/ubuntu/mhs/client_key.pem"
+        self.ca_certs_path = "/home/ubuntu/mhs/ca_certs.pem"
 
     @staticmethod
     def create_certs_files(root_dir: Union[str, pathlib.Path], private_key: str = None, local_cert: str = None, ca_certs: str = None) -> Certs:
