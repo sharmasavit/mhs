@@ -32,9 +32,9 @@ services:
     ports:
       - "32768:80"
     volumes:
-      - ./client_cert.pem:/mhs/client_cert.pem
-      - ./client_key.pem:/mhs/client_key.pem
-      - ./ca_certs.pem:/mhs/ca_certs.pem
+      - ./client_cert.pem:/home/ubuntu/mhs/client_cert.pem
+      - ./client_key.pem:/home/ubuntu/mhs/client_key.pem
+      - ./ca_certs.pem:/home/ubuntu/mhs/ca_certs.pem
 
     environment:
       - MHS_LOG_LEVEL=NOTSET
