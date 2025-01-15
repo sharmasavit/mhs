@@ -2,11 +2,11 @@ version: '3'
 
 services:
   inbound:
-    image: nhsdev/nia-mhs-inbound:1.3.2
+    image: nhsdev/nia-mhs-inbound:1.3.3
     ports:
       - "9787:80"
     environment:
-      - MHS_LOG_LEVEL=NOTSET
+      - MHS_LOG_LEVEL=DEBUG
       - MHS_SECRET_PARTY_KEY=VND3J-823806
       - MHS_SECRET_CLIENT_CERT=|
         -----BEGIN CERTIFICATE-----
@@ -150,11 +150,11 @@ services:
       - SERVICE_PORTS=80
       - SUPPORTED_FILE_TYPES
   outbound:
-    image: nhsdev/nia-mhs-outbound:1.3.2
+    image: nhsdev/nia-mhs-outbound:1.3.3
     ports:
       - "32768:80"
     environment:
-      - MHS_LOG_LEVEL=NOTSET
+      - MHS_LOG_LEVEL=DEBUG
       - MHS_SECRET_PARTY_KEY=VND3J-823806
       - MHS_SECRET_CLIENT_CERT=-----BEGIN CERTIFICATE-----
         MIIE5DCCA8ygAwIBAgIRAIMzY0v3bf5i/ydIEFfrzT0wDQYJKoZIhvcNAQELBQAw
@@ -297,7 +297,7 @@ services:
       - MHS_SDS_API_URL=https://int.api.service.nhs.uk/spine-directory/FHIR/R4
       - MHS_SDS_API_KEY=BGH3LMDtnadxNtL6YetqurpZDnE4wjtz
   route:
-    image: nhsdev/nia-mhs-route:1.3.2
+    image: nhsdev/nia-mhs-route:1.3.3
     ports:
       - "8080:80"
     environment:
