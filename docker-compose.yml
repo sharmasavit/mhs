@@ -188,32 +188,32 @@ services:
         -----END CERTIFICATE-----
       - MHS_SECRET_CLIENT_KEY=|
         -----BEGIN PRIVATE KEY-----
-        MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCIApoeG0Kvu6jv
-        nvo4lHCpRn6eEEZUsj+m3cvO2/x/s4NvLWM/VWrioAoeDWGxyfdCUqaedveL4vWa
-        5T+EzjyaAj179iW4U7MaIv4bt48t2tQMfefaJsg2ZLA9IyN/VCyO8lRAm/S2QaXH
-        DEpiP482VH/Ix+gO3zMQvfs4UnA2kaZ4XH78rrAvVBgEIcMkH1x4vHRrzC3a7+RT
-        8A40yP+WNi8TnH7I97Nkp72ecNJ+5FFJEAXyECOyUzZlIB9qZah/+JfBfDsaNsaP
-        nW/0WNwIoBRysvvOaBQcD3mfBgA5yw8KdXxfHnAzD6rl2pb/xq7eE7pFmoK+g0v2
-        xEZM2iBnAgMBAAECggEALzUP/yEhHVO6SCla2iaTj/161yv47U7NDwLuyYbLdht9
-        pCoRx5rDNZOsz09/uDDMlIWRdXD/bNtCuheV22el2yKp6ou9/eN3R7wbjM1Ccf0B
-        GrDct3g8h7yc+ytmF7zElnz/x0kaP+Q7QQJAEyfScl4T2EGihv7rf4UhXCQo9JdJ
-        pP7samlCIBy4gApB0Tlfs8TRHqUF4Z2iBnEhgRwkGpzKasVwWX4vQYrLtIAQY4jS
-        /3NX8yairawWcm4xOnQ+wQN5d83KUrIxOXx7jTHbR9fV5nDPcsKME61jIeVxnPA3
-        z6Y/rZzt5Qj7jBX+5vsl1Fdi+3cNnRzt5NY3YgbrgQKBgQDAHjpfj5fH5Lhuvgi8
-        oitKH2EX78FWTnZHYWpcM8r9s2lHPyPBTvP+mnuVGQu3/+8dWHpOwFtTAGqBCXQF
-        PtMaKPwR5H8PdDijIiaBPOjHpZxpUm5MP0VIf6XOfds/FzCzMPW3P8hN1NEGoHDL
-        vITlHrw/WSHcNCiT7hivHxXAJwKBgQC1PET49JU1JHU7fdH3wlkUSH4Ax6WMSNTS
-        R8KR8BekYJcThhlKqWZonOhK4H1BnsKHxPtqY8UReImevhVVSApVG+7SMpMQbiHW
-        c8gQVimzmpBcSXwL7WyGDqv4I5pKFWdVvXPwKP88D9xAKfsHrPqKJ8/z/LXzkuPl
-        iZBRrmCFwQKBgAHsS4lJVquZjn8NR+kbdnN3fPFQZQ8IGgb84qOpoQ6JDTS5XRJC
-        SA70XOhRJ9zfovUYPaEsK73Y8zf3cEHdLx/D6UIEl4EAGNEJNnl0sp/M+JPVT2VT
-        /M2M+Yvnlpo7ETG5+7up18dvqef3Eyn26R2iASBhNAWQQBe6+mRGW2FhAoGAX8Vh
-        jU1yK4sAiFeMxShmell0fGUEDoXOMPDK2OPPGoYQT7jlVJcADvgbqLXIewyyL5zg
-        XvAqC3lu//viuhY/n4oLQfiHzn7kUrcMWdWuY8Kh1qLeck8cshq+tXna5ps46A4d
-        XiPL/KlE8oM8rGm0W51+PqikXfqZg4qWQROs3gECgYEAkww0f664tHWZKxVk4AS4
-        LOjdR6ym3hjdnZ8AyqnaApOuFIVpGTqvPYFXmpWMnnjnRcGcbwa5hiAoULPhSEtZ
-        akPPgugh/WOBP3AWZGXTjh+bqg67JAeNS6Um7SEJDjgQOQNCsJLZK1AX5kI6LD+M
-        8ReV7171ZJKS5bt7G1OE7WA=
+        MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC/eldvdphgPbqf
+        FcMEmoom173g7ptz7iHMxvAXwEBz1+oY/WCgOt/9DAUYLWkpjX7NbMuk6biZ2PQL
+        fyWXjxj5OKzW76bqoZnb2kYoBuQYx+Nj3hhNC3Qnrxbnx7IzzK/qCNa+SzOVbVjf
+        eOPTy6VIicEMLjp5GYcyJ/c1gsZPwASxsLo71ieAbiy18m/wgiDvY+dQ8YjN6k+Z
+        xsrRrjjyF7iCOFdMg8C4Rdtz7ik2TRltrE1AngkZVV4EOsdJffDblfxLD4qvVdRW
+        wLdzoMh1pc9TjdmXyrAutsfe5NOR+RbffHSARXFW5fb7xI1Y/B1GmSBFMCAC+uiU
+        QvXhaZcrAgMBAAECggEAILeIxRTgiGFDx/bx8ZFuVaC7YvmiOjbQM6syTvychq63
+        4zk4D2i/6P7qx+zKcT0qE3OpgC4nSrJVULmS9MiQndTfQ4KDZMfkADrVjfVPeCR/
+        aAsE3/U7DaTPJx9qBYvN6xFDkBRNZhTfAKApXYEIZtKS17/2YcbI4PsPNGd59xou
+        df7zgbd6SA47pAHoregeaRcsMIztqtjf3UhYe4WoqHZFKUvTkxgPbs7E1p5TZ92g
+        RslTdDbQqLaHdiTOqKB/g363qhJ5dVVm+rb6MjtgJGdnpLVH5XxuboECXF4FRJR3
+        StrM2HGSB1z7ZeasNiKtT63kMO7QKiA5TyltzwHM0QKBgQDns/3bNqYfuhWCdvwq
+        W0oON9OKAByWRIuwWzIQWIQUm2szwH2fgUJB2V3/AXD/y2SEdQZM3A0L0xBhVTQj
+        cc2nvL7p6J+oiYp2GUHm73tHpkAzq7hbA6ANRGRmRD2pIUjOL5qPbtwM+gfGTpcN
+        mjUYGfw1ggk0LOZHn+4sSVANnwKBgQDTjoPhPtI1O8up91NBbSXeSp3qMWUa9dtK
+        eLB8wEKCBWdlFL0fD1hMjmJEqaY4UZm1Gs/sbDIkGogahmsS6lEiTWFbEK6gFUTY
+        dCJ65WhuqdLKyvkwmr4694Ctp6Ejhbod/2/2GBPhWLrUTAQSZ4TH8Zp/KJZSXsgl
+        4jVO6Syy9QKBgQDXhI1I/RESi8T8IG63e0hr5zOFtkrg3wtL09fCaoMYo+PYNGDl
+        H5cgpu4OhymzVF2/8xYUIc6kxAMFdfpUScOwFRlDe1QesSiwZxfsla8G2zX2mfCV
+        /8486PO2SB1Olx4gYxkR910JWPwoUeuhBGIEdA8rOjQTavwbfUBNwzeKIwKBgFka
+        lntBbWIUfFRrIjrVUPTOcrKX+WCgmqtEJ/lzNM/0nLbbREiXuvYLpmILHkJsRBQe
+        ZeLLM1c3gYnCgcimvmN3OgEUBqjQLH4KdBdVFmY9ytW1Jb2N/39wjVcW2mzOvzQx
+        SSPawkzQhWgzWCe0SB26qfrSynWJDD3Ah/ljhnsdAoGAaCDlZ/N/BPvMWfafyGXg
+        Zr1iEso3Vzulr3/UwasqdbURVKbglhWzdTuZMwiPjhbrVcPDZzpg02uHHM7UXtBI
+        g83mz0maeg1cRE6ftVMRQULcrdF1hJ44db0oHbA7FRODBJhIazPtLPVAXY+j57KA
+        1vsiWMuSqmPRbL5yiaY2QVc=
         -----END PRIVATE KEY-----
       - MHS_SECRET_CA_CERTS=|
         -----BEGIN CERTIFICATE-----
@@ -293,7 +293,7 @@ services:
       - MHS_SPINE_REQUEST_MAX_SIZE=4999600 # 5 000 000 - 400
       # Note that this endpoint URL is Opentest-specific
       - MHS_FORWARD_RELIABLE_ENDPOINT_URL=https://msg.int.spine2.ncrs.nhs.uk/reliablemessaging/reliablerequest
-      # This is for disabling hostname validation so OpenTest ip address will
+      # This is for disabling hostname validation so OpenTest ip address
       - MHS_OUTBOUND_VALIDATE_CERTIFICATE=${MHS_OUTBOUND_VALIDATE_CERTIFICATE:-True}
       - SERVICE_PORTS=80
       - MHS_OUTBOUND_ROUTING_LOOKUP_METHOD=SDS_API
