@@ -37,7 +37,7 @@ MHS_SPINE_ORG_CODE: "YES"
 MHS_SPINE_REQUEST_MAX_SIZE: "4999600"
 
 # Forwarding configuration
-MHS_FORWARD_RELIABLE_ENDPOINT_URL: https://155.231.231.2:53/reliablemessaging/reliablerequest
+MHS_FORWARD_RELIABLE_ENDPOINT_URL: https://msg.int.spine2.ncrs.nhs.uk/reliablemessaging/reliablerequest
 MHS_SDS_URL: ldap://192.168.128.11 # SDS address from OpenTest
 MHS_SDS_SEARCH_BASE: ou=services,o=nhs
 MHS_DISABLE_SDS_TLS: "True"
