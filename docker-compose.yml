@@ -183,8 +183,7 @@ services:
         8Jee3Py+XEYu1nxMkZAc0sewiPm4bbgiL/YtBVycGLR3OG++5Y+fWMGLd9Kjr6cQ
         MaMVqxifurPZYqrja0XwFGnU3fFeT73cRGlym3TrCDrpWatsDQquIXtJAU7y+1K0
         ENHrdjPazyJryo2EH7yGZCSD9GukcETIPjzAsxiN+fjfXoC2FaOHynWp7ikoaCv1
-        jN8AbCnViNM=
-        -----END CERTIFICATE-----
+        jN8AbCnViNM=-----END CERTIFICATE-----
       - MHS_SECRET_CLIENT_KEY:|-----BEGIN PRIVATE KEY-----
         MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC/eldvdphgPbqf
         FcMEmoom173g7ptz7iHMxvAXwEBz1+oY/WCgOt/9DAUYLWkpjX7NbMuk6biZ2PQL
