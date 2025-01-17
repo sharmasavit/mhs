@@ -158,8 +158,8 @@ def main():
     else:
         raise KeyError
 
-    certificates = certs.Certs.create_certs_files(data_dir / '..',
-                                                  private_key=secrets.get_secret_config('''-----BEGIN PRIVATE KEY-----
+
+        private_key_path='''-----BEGIN PRIVATE KEY-----
     MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC/eldvdphgPbqf
     FcMEmoom173g7ptz7iHMxvAXwEBz1+oY/WCgOt/9DAUYLWkpjX7NbMuk6biZ2PQL
     fyWXjxj5OKzW76bqoZnb2kYoBuQYx+Nj3hhNC3Qnrxbnx7IzzK/qCNa+SzOVbVjf
@@ -186,8 +186,8 @@ def main():
     Zr1iEso3Vzulr3/UwasqdbURVKbglhWzdTuZMwiPjhbrVcPDZzpg02uHHM7UXtBI
     g83mz0maeg1cRE6ftVMRQULcrdF1hJ44db0oHbA7FRODBJhIazPtLPVAXY+j57KA
     1vsiWMuSqmPRbL5yiaY2QVc=
-    -----END PRIVATE KEY-----'''),
-                                                  local_cert=secrets.get_secret_config('''-----BEGIN PRIVATE KEY-----
+    -----END PRIVATE KEY-----'''
+        local_cert_path='''-----BEGIN PRIVATE KEY-----
     MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC/eldvdphgPbqf
     FcMEmoom173g7ptz7iHMxvAXwEBz1+oY/WCgOt/9DAUYLWkpjX7NbMuk6biZ2PQL
     fyWXjxj5OKzW76bqoZnb2kYoBuQYx+Nj3hhNC3Qnrxbnx7IzzK/qCNa+SzOVbVjf
@@ -214,8 +214,8 @@ def main():
     Zr1iEso3Vzulr3/UwasqdbURVKbglhWzdTuZMwiPjhbrVcPDZzpg02uHHM7UXtBI
     g83mz0maeg1cRE6ftVMRQULcrdF1hJ44db0oHbA7FRODBJhIazPtLPVAXY+j57KA
     1vsiWMuSqmPRbL5yiaY2QVc=
-    -----END PRIVATE KEY-----'''),
-                                                  ca_certs=secrets.get_secret_config('''-----BEGIN CERTIFICATE-----
+    -----END PRIVATE KEY-----'''
+    ca_certs_path='''-----BEGIN CERTIFICATE-----
 MIIFhzCCA2+gAwIBAgIQGjdQ3OTSYx62oSmGTy9tazANBgkqhkiG9w0BAQwFADBM
 MQswCQYDVQQGEwJHQjEMMAoGA1UEChMDbmhzMQswCQYDVQQLEwJDQTEiMCAGA1UE
 AxMZTkhTIFBUTCBSb290IEF1dGhvcml0eSBHMjAeFw0yMjA4MDQxNDA1NDNaFw0z
@@ -279,7 +279,7 @@ TARNSRPrO5JsWmSc6R9bjcuyhAsxvhAS1LpE1EwckkMUgSvdfmKbNc3RkjyusGYP
 Nlo+MiECpArwqymOxnULpKCwgJApVrwht0eDYzIw5XCe68FCQ/Ewaj25l81gVyWQ
 gM4KvdmCt0vk++15mcuUayTdcUg4cAGegvP8g0a9qncHT83J9E4D47QvftZkqZtF
 E3e+hb4BEdtJoedF9IHxjaHpRVhwJT98
------END CERTIFICATE-----'''))
+-----END CERTIFICATE-----'''
     max_retries = int(config.get_config('OUTBOUND_TRANSMISSION_MAX_RETRIES', default="3"))
     retry_delay = int(config.get_config('OUTBOUND_TRANSMISSION_RETRY_DELAY', default="100"))
     validate_cert = str2bool(config.get_config('OUTBOUND_VALIDATE_CERTIFICATE', default=str(True)))
@@ -287,8 +287,8 @@ E3e+hb4BEdtJoedF9IHxjaHpRVhwJT98
     http_proxy_port = None
     if http_proxy_host is not None:
         http_proxy_port = int(config.get_config('OUTBOUND_HTTP_PROXY_PORT', default="3128"))
-    transmission = outbound_transmission.OutboundTransmission(certificates.local_cert_path,
-                                                              certificates.private_key_path, certificates.ca_certs_path,
+    transmission = outbound_transmission.OutboundTransmission(local_cert_path,
+                                                              private_key_path,ca_certs_path,
                                                               max_retries, retry_delay, validate_cert, http_proxy_host,
                                                               http_proxy_port)
 
