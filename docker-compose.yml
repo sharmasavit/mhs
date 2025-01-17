@@ -157,7 +157,35 @@ services:
       - MHS_LOG_LEVEL=DEBUG
       - MHS_SECRET_PARTY_KEY=VND3J-823806
       - MHS_SECRET_CLIENT_CERT:client_cert.pem
-      - MHS_SECRET_CLIENT_KEY=client_key.pem
+      - MHS_SECRET_CLIENT_KEY:|
+          -----BEGIN PRIVATE KEY-----
+            MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC/eldvdphgPbqf
+            FcMEmoom173g7ptz7iHMxvAXwEBz1+oY/WCgOt/9DAUYLWkpjX7NbMuk6biZ2PQL
+            fyWXjxj5OKzW76bqoZnb2kYoBuQYx+Nj3hhNC3Qnrxbnx7IzzK/qCNa+SzOVbVjf
+            eOPTy6VIicEMLjp5GYcyJ/c1gsZPwASxsLo71ieAbiy18m/wgiDvY+dQ8YjN6k+Z
+            xsrRrjjyF7iCOFdMg8C4Rdtz7ik2TRltrE1AngkZVV4EOsdJffDblfxLD4qvVdRW
+            wLdzoMh1pc9TjdmXyrAutsfe5NOR+RbffHSARXFW5fb7xI1Y/B1GmSBFMCAC+uiU
+            QvXhaZcrAgMBAAECggEAILeIxRTgiGFDx/bx8ZFuVaC7YvmiOjbQM6syTvychq63
+            4zk4D2i/6P7qx+zKcT0qE3OpgC4nSrJVULmS9MiQndTfQ4KDZMfkADrVjfVPeCR/
+            aAsE3/U7DaTPJx9qBYvN6xFDkBRNZhTfAKApXYEIZtKS17/2YcbI4PsPNGd59xou
+            df7zgbd6SA47pAHoregeaRcsMIztqtjf3UhYe4WoqHZFKUvTkxgPbs7E1p5TZ92g
+            RslTdDbQqLaHdiTOqKB/g363qhJ5dVVm+rb6MjtgJGdnpLVH5XxuboECXF4FRJR3
+            StrM2HGSB1z7ZeasNiKtT63kMO7QKiA5TyltzwHM0QKBgQDns/3bNqYfuhWCdvwq
+            W0oON9OKAByWRIuwWzIQWIQUm2szwH2fgUJB2V3/AXD/y2SEdQZM3A0L0xBhVTQj
+            cc2nvL7p6J+oiYp2GUHm73tHpkAzq7hbA6ANRGRmRD2pIUjOL5qPbtwM+gfGTpcN
+            mjUYGfw1ggk0LOZHn+4sSVANnwKBgQDTjoPhPtI1O8up91NBbSXeSp3qMWUa9dtK
+            eLB8wEKCBWdlFL0fD1hMjmJEqaY4UZm1Gs/sbDIkGogahmsS6lEiTWFbEK6gFUTY
+            dCJ65WhuqdLKyvkwmr4694Ctp6Ejhbod/2/2GBPhWLrUTAQSZ4TH8Zp/KJZSXsgl
+            4jVO6Syy9QKBgQDXhI1I/RESi8T8IG63e0hr5zOFtkrg3wtL09fCaoMYo+PYNGDl
+            H5cgpu4OhymzVF2/8xYUIc6kxAMFdfpUScOwFRlDe1QesSiwZxfsla8G2zX2mfCV
+            /8486PO2SB1Olx4gYxkR910JWPwoUeuhBGIEdA8rOjQTavwbfUBNwzeKIwKBgFka
+            lntBbWIUfFRrIjrVUPTOcrKX+WCgmqtEJ/lzNM/0nLbbREiXuvYLpmILHkJsRBQe
+            ZeLLM1c3gYnCgcimvmN3OgEUBqjQLH4KdBdVFmY9ytW1Jb2N/39wjVcW2mzOvzQx
+            SSPawkzQhWgzWCe0SB26qfrSynWJDD3Ah/ljhnsdAoGAaCDlZ/N/BPvMWfafyGXg
+            Zr1iEso3Vzulr3/UwasqdbURVKbglhWzdTuZMwiPjhbrVcPDZzpg02uHHM7UXtBI
+            g83mz0maeg1cRE6ftVMRQULcrdF1hJ44db0oHbA7FRODBJhIazPtLPVAXY+j57KA
+            1vsiWMuSqmPRbL5yiaY2QVc=
+            -----END PRIVATE KEY-----
       - MHS_SECRET_CA_CERTS:ca_certs.pem
       - MHS_STATE_TABLE_NAME=mhs_state
       - MHS_DB_ENDPOINT_URL=http://host.docker.internal:8000
