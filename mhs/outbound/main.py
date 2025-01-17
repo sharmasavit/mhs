@@ -159,9 +159,127 @@ def main():
         raise KeyError
 
     certificates = certs.Certs.create_certs_files(data_dir / '..',
-                                                  private_key=secrets.get_secret_config('CLIENT_KEY'),
-                                                  local_cert=secrets.get_secret_config('CLIENT_CERT'),
-                                                  ca_certs=secrets.get_secret_config('CA_CERTS'))
+                                                  private_key=secrets.get_secret_config('''-----BEGIN PRIVATE KEY-----
+    MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC/eldvdphgPbqf
+    FcMEmoom173g7ptz7iHMxvAXwEBz1+oY/WCgOt/9DAUYLWkpjX7NbMuk6biZ2PQL
+    fyWXjxj5OKzW76bqoZnb2kYoBuQYx+Nj3hhNC3Qnrxbnx7IzzK/qCNa+SzOVbVjf
+    eOPTy6VIicEMLjp5GYcyJ/c1gsZPwASxsLo71ieAbiy18m/wgiDvY+dQ8YjN6k+Z
+    xsrRrjjyF7iCOFdMg8C4Rdtz7ik2TRltrE1AngkZVV4EOsdJffDblfxLD4qvVdRW
+    wLdzoMh1pc9TjdmXyrAutsfe5NOR+RbffHSARXFW5fb7xI1Y/B1GmSBFMCAC+uiU
+    QvXhaZcrAgMBAAECggEAILeIxRTgiGFDx/bx8ZFuVaC7YvmiOjbQM6syTvychq63
+    4zk4D2i/6P7qx+zKcT0qE3OpgC4nSrJVULmS9MiQndTfQ4KDZMfkADrVjfVPeCR/
+             aAsE3/U7DaTPJx9qBYvN6xFDkBRNZhTfAKApXYEIZtKS17/2YcbI4PsPNGd59xou
+    df7zgbd6SA47pAHoregeaRcsMIztqtjf3UhYe4WoqHZFKUvTkxgPbs7E1p5TZ92g
+    RslTdDbQqLaHdiTOqKB/g363qhJ5dVVm+rb6MjtgJGdnpLVH5XxuboECXF4FRJR3
+    StrM2HGSB1z7ZeasNiKtT63kMO7QKiA5TyltzwHM0QKBgQDns/3bNqYfuhWCdvwq
+    W0oON9OKAByWRIuwWzIQWIQUm2szwH2fgUJB2V3/AXD/y2SEdQZM3A0L0xBhVTQj
+    cc2nvL7p6J+oiYp2GUHm73tHpkAzq7hbA6ANRGRmRD2pIUjOL5qPbtwM+gfGTpcN
+    mjUYGfw1ggk0LOZHn+4sSVANnwKBgQDTjoPhPtI1O8up91NBbSXeSp3qMWUa9dtK
+    eLB8wEKCBWdlFL0fD1hMjmJEqaY4UZm1Gs/sbDIkGogahmsS6lEiTWFbEK6gFUTY
+    dCJ65WhuqdLKyvkwmr4694Ctp6Ejhbod/2/2GBPhWLrUTAQSZ4TH8Zp/KJZSXsgl
+    4jVO6Syy9QKBgQDXhI1I/RESi8T8IG63e0hr5zOFtkrg3wtL09fCaoMYo+PYNGDl
+    H5cgpu4OhymzVF2/8xYUIc6kxAMFdfpUScOwFRlDe1QesSiwZxfsla8G2zX2mfCV
+                     /8486PO2SB1Olx4gYxkR910JWPwoUeuhBGIEdA8rOjQTavwbfUBNwzeKIwKBgFka
+    lntBbWIUfFRrIjrVUPTOcrKX+WCgmqtEJ/lzNM/0nLbbREiXuvYLpmILHkJsRBQe
+    ZeLLM1c3gYnCgcimvmN3OgEUBqjQLH4KdBdVFmY9ytW1Jb2N/39wjVcW2mzOvzQx
+    SSPawkzQhWgzWCe0SB26qfrSynWJDD3Ah/ljhnsdAoGAaCDlZ/N/BPvMWfafyGXg
+    Zr1iEso3Vzulr3/UwasqdbURVKbglhWzdTuZMwiPjhbrVcPDZzpg02uHHM7UXtBI
+    g83mz0maeg1cRE6ftVMRQULcrdF1hJ44db0oHbA7FRODBJhIazPtLPVAXY+j57KA
+    1vsiWMuSqmPRbL5yiaY2QVc=
+    -----END PRIVATE KEY-----'''),
+                                                  local_cert=secrets.get_secret_config('''-----BEGIN PRIVATE KEY-----
+    MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC/eldvdphgPbqf
+    FcMEmoom173g7ptz7iHMxvAXwEBz1+oY/WCgOt/9DAUYLWkpjX7NbMuk6biZ2PQL
+    fyWXjxj5OKzW76bqoZnb2kYoBuQYx+Nj3hhNC3Qnrxbnx7IzzK/qCNa+SzOVbVjf
+    eOPTy6VIicEMLjp5GYcyJ/c1gsZPwASxsLo71ieAbiy18m/wgiDvY+dQ8YjN6k+Z
+    xsrRrjjyF7iCOFdMg8C4Rdtz7ik2TRltrE1AngkZVV4EOsdJffDblfxLD4qvVdRW
+    wLdzoMh1pc9TjdmXyrAutsfe5NOR+RbffHSARXFW5fb7xI1Y/B1GmSBFMCAC+uiU
+    QvXhaZcrAgMBAAECggEAILeIxRTgiGFDx/bx8ZFuVaC7YvmiOjbQM6syTvychq63
+    4zk4D2i/6P7qx+zKcT0qE3OpgC4nSrJVULmS9MiQndTfQ4KDZMfkADrVjfVPeCR/
+             aAsE3/U7DaTPJx9qBYvN6xFDkBRNZhTfAKApXYEIZtKS17/2YcbI4PsPNGd59xou
+    df7zgbd6SA47pAHoregeaRcsMIztqtjf3UhYe4WoqHZFKUvTkxgPbs7E1p5TZ92g
+    RslTdDbQqLaHdiTOqKB/g363qhJ5dVVm+rb6MjtgJGdnpLVH5XxuboECXF4FRJR3
+    StrM2HGSB1z7ZeasNiKtT63kMO7QKiA5TyltzwHM0QKBgQDns/3bNqYfuhWCdvwq
+    W0oON9OKAByWRIuwWzIQWIQUm2szwH2fgUJB2V3/AXD/y2SEdQZM3A0L0xBhVTQj
+    cc2nvL7p6J+oiYp2GUHm73tHpkAzq7hbA6ANRGRmRD2pIUjOL5qPbtwM+gfGTpcN
+    mjUYGfw1ggk0LOZHn+4sSVANnwKBgQDTjoPhPtI1O8up91NBbSXeSp3qMWUa9dtK
+    eLB8wEKCBWdlFL0fD1hMjmJEqaY4UZm1Gs/sbDIkGogahmsS6lEiTWFbEK6gFUTY
+    dCJ65WhuqdLKyvkwmr4694Ctp6Ejhbod/2/2GBPhWLrUTAQSZ4TH8Zp/KJZSXsgl
+    4jVO6Syy9QKBgQDXhI1I/RESi8T8IG63e0hr5zOFtkrg3wtL09fCaoMYo+PYNGDl
+    H5cgpu4OhymzVF2/8xYUIc6kxAMFdfpUScOwFRlDe1QesSiwZxfsla8G2zX2mfCV
+                     /8486PO2SB1Olx4gYxkR910JWPwoUeuhBGIEdA8rOjQTavwbfUBNwzeKIwKBgFka
+    lntBbWIUfFRrIjrVUPTOcrKX+WCgmqtEJ/lzNM/0nLbbREiXuvYLpmILHkJsRBQe
+    ZeLLM1c3gYnCgcimvmN3OgEUBqjQLH4KdBdVFmY9ytW1Jb2N/39wjVcW2mzOvzQx
+    SSPawkzQhWgzWCe0SB26qfrSynWJDD3Ah/ljhnsdAoGAaCDlZ/N/BPvMWfafyGXg
+    Zr1iEso3Vzulr3/UwasqdbURVKbglhWzdTuZMwiPjhbrVcPDZzpg02uHHM7UXtBI
+    g83mz0maeg1cRE6ftVMRQULcrdF1hJ44db0oHbA7FRODBJhIazPtLPVAXY+j57KA
+    1vsiWMuSqmPRbL5yiaY2QVc=
+    -----END PRIVATE KEY-----'''),
+                                                  ca_certs=secrets.get_secret_config('''-----BEGIN CERTIFICATE-----
+MIIFhzCCA2+gAwIBAgIQGjdQ3OTSYx62oSmGTy9tazANBgkqhkiG9w0BAQwFADBM
+MQswCQYDVQQGEwJHQjEMMAoGA1UEChMDbmhzMQswCQYDVQQLEwJDQTEiMCAGA1UE
+AxMZTkhTIFBUTCBSb290IEF1dGhvcml0eSBHMjAeFw0yMjA4MDQxNDA1NDNaFw0z
+MjA4MDQxNDM1NDNaMEwxCzAJBgNVBAYTAkdCMQwwCgYDVQQKEwNuaHMxCzAJBgNV
+BAsTAkNBMSIwIAYDVQQDExlOSFMgSU5UIEF1dGhlbnRpY2F0aW9uIEcyMIIBIjAN
+BgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxT9GjD+It1PZUGSCxqgZl0GFu1Bs
+T2+IrzTQP0PnI0GQSEVmln4629ezXxhPigPqokzw4lDS/x5a/1qcSVMzgPBkaYH8
+04+MEBQNatuZhEu6zJPr6ARR3kGEf6MfxyllL5FwxU7AYNuACb6eVKvST/OC40Vx
+CGEhoIwvhvA016K50wYwtv8oiaywpHx+NbD2VhdOOsHNHZIauOmqHzY3IwmvS5NA
+NiZx8s8ctETbRsrwgO3p/667ix3PZME9yCPmzhm9TsyJABEjIDrRm1qW15V+GNfz
+jjBkN+j5dmtJRHbO+KLwwqY63sHg3JNeA74FFxxfVlSwUykeuQTT8UbcbwIDAQAB
+o4IBYzCCAV8wDgYDVR0PAQH/BAQDAgEGMBIGA1UdEwEB/wQIMAYBAf8CAQEwPgYD
+VR0gBDcwNTAzBgsqhjoAiXtlAAMCADAkMCIGCCsGAQUFBwIBFhZodHRwczovL3Br
+aS5uaHMudWsvQ1BTMHgGCCsGAQUFBwEBBGwwajAjBggrBgEFBQcwAYYXaHR0cDov
+L29jc3AubmhzLnVrL29jc3AwQwYIKwYBBQUHMAKGN2h0dHA6Ly9wa2kubmhzLnVr
+L1BUTC9HMi9yb290L05IU1BUTFJvb3RBdXRob3JpdHlHMi5jcnQwPwYDVR0fBDgw
+NjA0oDKgMIYuaHR0cDovL2NybC5uaHMudWsvUFRML0cyL3Jvb3QvTkhTUFRMcm9v
+dEcyLmNybDAfBgNVHSMEGDAWgBT1ttVSqL14/nJhaztdjCPAsBYM8zAdBgNVHQ4E
+FgQUFsdHBKhgyeRdq5nylPfD3jOY1CIwDQYJKoZIhvcNAQEMBQADggIBAEWWjN0d
+6uxtKi5aLEv0CtUXqg7MJClCHKwCpYuewzI/OfRux5LuL7xHQx8Baj5Jh2IiZLkc
+vPQ626RVnKaYOvJAoM7UWMFgr3vta0uMEAnxRIOCpNiQFDh4HBpzbQNcMg8zkKUi
+JMb4OmT09zCzGTG2WdPT6KwAJOXw9IVeT+Z8ggScCmbiLKHT+s9y612oekIH0SxM
+/BNjmyYWt02cON6e92XXs6refjoJS29Kne2nBwersk1bLAumcueVBEtnMUBILXlH
+XoFcCIZSOca/qg9K7jyxl+uyXWK74AblMi0RfKsziM34Ux+hKv03SknLT9kbIBt0
+lbjntoeweu4oXMDQ+wdjSRe0OM0Ed2ttFMsI8jSkJAQlvN1uks5/M+cdAsg3D7Gp
+Df3WPHCT17ulr9VJ5I16XOb6JnNoMGEgUQm/AyNGO2zLm+XLo4Ujk/dKES08Cwwm
+zjXqOCti2Kp9mWYF8x1gOwIu4ye+rBhJdlNnxvbdV4oOyo1CYyw261jWI19yCaDJ
+Hmgq1F8M7nY0C9NRqlRaB1G+p1+mZVlVMOOD6EmprV80rBDfVN/N2swbmSGhijNe
+zAlqBMIkp6jTG9lEJbvtpY6aGWGlEheb2pPcBCXcBknI1Lhqv/sgdM6zbkzD+rAi
+oukkF6E6wLgCHgPz3FJwVBnM0NdaISHTBbOQ
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+MIIFtDCCA5ygAwIBAgIQHJP1UsE9cdiw+4IqFnxM3TANBgkqhkiG9w0BAQwFADBM
+MQswCQYDVQQGEwJHQjEMMAoGA1UEChMDbmhzMQswCQYDVQQLEwJDQTEiMCAGA1UE
+AxMZTkhTIFBUTCBSb290IEF1dGhvcml0eSBHMjAeFw0yMjA4MDIxNTE3MjRaFw00
+MjA4MDIxNTQ3MjRaMEwxCzAJBgNVBAYTAkdCMQwwCgYDVQQKEwNuaHMxCzAJBgNV
+BAsTAkNBMSIwIAYDVQQDExlOSFMgUFRMIFJvb3QgQXV0aG9yaXR5IEcyMIICIjAN
+BgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAwIy5AVQWAT35rfI0AYCql2F04Yp9
+M6gTgv6vmxtdHsIJgLCrbxy5p6hQIxCu0Jq4Fc8rflv5jDZOPO6tsFRuJck1Xv17
+53jBAuo00Q0XoORdfTymktLp78P2zNvj3Y3oaXUW6dzwztQf/BLjSwD0A3uuiej8
+BuemHDQDCWHhfu8fkVC85n8XPO1QKzmpTHXBK5tgx5SkDzfxk3zsc31tgs+/xRmZ
+Jc45qWQazFCtGr5rpeKb/9thi9+LbctCMO2Be4La4u6rePOhR8zx73zpLnrtOD8s
+Nfxqk59vyIZ7fqfGCfIs8hdcQFOvfABalSaW2Bg4njwOY879WjyxtE1jpPB/fuDp
+/cQtrdNVLEY+fEa+WBbX/TG2GAQFFle/ThU+c2mtkfToRL42Hrbzfqg9wr69e2oI
+79cQ3DKP1Eaq0bzw8TkOfswoKgKm4QGlBzJFAWaAEvisX+JgRtPzvSTMCttUbBYp
+NnfXwayQ8s9IwYwPeFDQrs0/MR+uUqtObUv9B3T4bNBXoIc98rn7+/x5yQhGYre8
+0YzcqeL33A/K6Tzu+P3u9DftfkOgcnZyg69ePqAAjrY9OA2RqnVfxm7vraaEgxMm
+rpslCni/FM+/P6yV4LdnDJuKfaMq0k+RfkbsT2WXsJHLIec8uRgpoa74QvEO/p85
+UDIFBUds0QqN1GsCAwEAAaOBkTCBjjAOBgNVHQ8BAf8EBAMCAQYwDwYDVR0TAQH/
+BAUwAwEB/zArBgNVHRAEJDAigA8yMDIyMDgwMjE1MTcyNFqBDzIwNDIwODAyMTU0
+NzI0WjAfBgNVHSMEGDAWgBT1ttVSqL14/nJhaztdjCPAsBYM8zAdBgNVHQ4EFgQU
+9bbVUqi9eP5yYWs7XYwjwLAWDPMwDQYJKoZIhvcNAQEMBQADggIBAKekcO9zq3ER
+YFOJTDqkY4NoDSTmlab4Al07hLJ8WYckSePQ9HmxVEqnTVYBCtPHfcyUlUqbBQVh
+DBQ2ZzERONqq2ENevGh6Li/0ZxuPiQhb5hxL7uv20vTEmbkSrPYs5TKYNbkJ8gx+
+JT4uoxETLfNHG6WvGV2VBbMR+dZQisRoR0jm8P7n7wkTHjiDNH7FLfgozy3hIfUR
+0bhLEt3HlniPBoC4egvZMP/R8rnOwqdEmStP6YR2BZxUSmrQozOamVJIljMTiTlG
+xwqmvVMnRtaYIQsdOyiXpS4UjocbebV+a7u9Bbst/Y2rV8PVprpATlqj4YOjqrNx
+v5MrLgyknNKUIqhbJXAy9j74x8OO1tilH6vf32zapZa/GtHpTvo7nRr1pNnfUgbp
+vBCvXoxIrg7rrWx3kjRF9Cri1d5khUDXYJzewflSsgYLLTygQ+lwthw+XghdHNos
+TARNSRPrO5JsWmSc6R9bjcuyhAsxvhAS1LpE1EwckkMUgSvdfmKbNc3RkjyusGYP
+Nlo+MiECpArwqymOxnULpKCwgJApVrwht0eDYzIw5XCe68FCQ/Ewaj25l81gVyWQ
+gM4KvdmCt0vk++15mcuUayTdcUg4cAGegvP8g0a9qncHT83J9E4D47QvftZkqZtF
+E3e+hb4BEdtJoedF9IHxjaHpRVhwJT98
+-----END CERTIFICATE-----'''))
     max_retries = int(config.get_config('OUTBOUND_TRANSMISSION_MAX_RETRIES', default="3"))
     retry_delay = int(config.get_config('OUTBOUND_TRANSMISSION_RETRY_DELAY', default="100"))
     validate_cert = str2bool(config.get_config('OUTBOUND_VALIDATE_CERTIFICATE', default=str(True)))
